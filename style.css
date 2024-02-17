@@ -1,0 +1,116 @@
+/*
+  background-color: rgb(155, 190, 200);
+  end-game background-color: rgb(0, 91, 65, 0.7);
+  win background-color: rgb(100, 153, 233, 0.7);
+  font-family: "Amatic SC", sans-serif;
+*/
+
+/* # Generic */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+  font-family: 'Amatic SC', sans-serif;
+  line-height: 1;
+  color: rgb(0, 23, 50);
+  background-color: rgb(155, 190, 200);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.btn {
+  font-size: 24px;
+  font-family: 'Amatic SC', sans-serif;
+  padding: 4px 20px 8px 20px;
+  /* width: 50%; */
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 23, 50);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(121, 172, 120);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  /* font-weight: 700; */
+}
+
+/* # Game grid */
+
+.game-board {
+  position: relative;
+  margin-bottom: 8px;
+  border: 2px solid rgb(0, 23, 50);
+}
+
+.game-container {
+  width: calc((48px * 6) + 4px);
+}
+
+.grid {
+  width: calc((48px * 6) + 4px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  outline: 1px dashed black;
+}
+
+.bar {
+  background-color: rgb(54, 84, 134);
+  border-radius: 8px;
+  border: 2px solid rgb(0, 23, 50);
+}
+
+/* # Game over */
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 91, 65, 0.7);
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.win {
+  background-color: rgb(100, 153, 233, 0.7);
+}
+
+.end-game-text {
+  font-size: 48px;
+  font-family: 'Amatic SC', sans-serif;
+  text-transform: uppercase;
+}
+
+/* # Utilities */
+
+.hidden {
+  display: none;
+}
