@@ -15,4 +15,4 @@ This is the screen you will see when you lose the game: <br />
 <img width="300" alt="game-over stacker" src="https://github.com/tolueng/stacker/assets/137485297/043fef0b-0c8d-4fa1-8af0-ec48f7b2fe7b"> <br />
 
 Tip: to make the game harder, you can change this code in JS (This is the default settings to win the game):<br />
-const gameInterval = setInterval(main, 600); //To make the game harder, you can change the number here. If you go closer to 1, it will be faster.
+const gameInterval = setInterval(main, 600); //To make the game harder, you can change the number here. If you go below 600, it will be faster.
